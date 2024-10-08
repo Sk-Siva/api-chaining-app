@@ -46,4 +46,4 @@ This project is a responsive web application designed to showcase the ability to
 
 # Deployment
 
- - You Can visit the application  by clicking this link https://sk-siva.github.io/event-management-app
+ - You Can visit the application  by clicking this link https://api-chaining-app.vercel.app
