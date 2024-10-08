@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main-container{
+  background-color:#282c34;
+  padding:10px;
+  margin:0px;
+  color:#ffffff;
+  min-height:100vh;
 }

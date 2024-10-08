@@ -1,70 +1,49 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# API Chaining Dashboard
 
-## Available Scripts
+This project is a responsive web application designed to showcase the ability to handle API interactions effectively. It demonstrates both GET and POST requests, implementing a series of API calls that chain together to create a seamless user experience. As shown in the demo video, the application fetches data from an API, uses the response data to create a new resource, and subsequently retrieves related information based on that resource.
 
-In the project directory, you can run:
+## Setup Instructions
 
-### `npm start`
+1. **Clone the Repository**
+   ```bash
+   https://github.com/Sk-Siva/api-chaining-app.git
+   cd your-repo
+2. **Install the dependencies**
+    npm install
+3. **Start your Appplication**
+    npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**React:** Core library for building the user interface.
+**Axios :** A promise-based HTTP client used for making asynchronous API requests (GET and POST) and handling responses, including error handling.
+**Tailwind CSS:** A utility-first CSS framework used for rapid UI development, making it easy to create custom and responsive designs without writing custom CSS.
 
-### `npm test`
+# Approach
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**API Chaining:** The application makes a series of asynchronous API calls. Initially, it fetches all users, extracts necessary data from the response, and uses that data to create a post.
+**State Management:** React's state management system is utilized to handle the state of the application effectively, ensuring that data is consistent and reflects user interactions.
+**Data Transformation:** The response data from API calls is transformed as needed to fit the requirements of subsequent API requests. This includes mapping fields and managing asynchronous updates using Promises and async/await syntax.
 
-### `npm run build`
+# Assumptions and Decisions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**User Familiarity:** Assumed that users have a basic understanding of web applications and can navigate them easily.
+**Choice of Libraries:** Selected Axios for making API requests due to its robust features and ease of handling JSON responses.
+**Error Handling:** Implemented error handling using try-catch blocks to manage API errors gracefully and provide feedback to users.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Fetch Users:** Retrieve a list of users from the API and display them in a responsive format.
+**Create Post:** Allow users to create a post using the data fetched from the API. The creation process utilizes fields from the initial user fetch.
+**Retrieve Comments:** After creating a post, fetch comments based on the post ID, showcasing the chaining of API requests.
+**Responsive Design:** The application is fully responsive, ensuring a good user experience across devices and screen sizes.
 
-### `npm run eject`
+# Known Issues
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Network Dependency:** The application relies on network availability for API calls; errors may occur if the network is down.
+**UI Responsiveness:** While the application is responsive, certain elements may require additional tweaks for optimal performance on very small screens.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ - You Can visit the application  by clicking this link https://sk-siva.github.io/event-management-app
